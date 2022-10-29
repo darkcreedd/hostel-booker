@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:hostel_booker/screens/booking_successful_screen.dart';
-import 'package:hostel_booker/screens/sign_in_screen.dart';
+
+import 'package:hostel_booker/screens/signup_screen.dart';
 // import 'package:hostel_booker/screens/filter_screen.dart';
 // import 'package:hostel_booker/screens/home.dart';
 // import 'package:hostel_booker/screens/home_screen.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blueGrey),
       debugShowCheckedModeBanner: false,
       title: 'Hostel Booker',
-      home: const SignInPage(),
+      home: const SignUpPage(),
     );
   }
 }

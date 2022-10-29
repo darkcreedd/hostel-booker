@@ -151,7 +151,9 @@ class _FilterScreenState extends State<FilterScreen> {
                     child: Container(
                       margin: const EdgeInsets.fromLTRB(8, 8, 8, 20),
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.green[700],
                             minimumSize:
