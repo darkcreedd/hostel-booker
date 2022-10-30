@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hostel_booker/screens/home_screen.dart';
 import 'package:hostel_booker/utils/styling.dart';
+
+import 'booking_screen.dart';
 
 class BookingSuccessful extends StatelessWidget {
   const BookingSuccessful({super.key});
@@ -20,7 +23,10 @@ class BookingSuccessful extends StatelessWidget {
               splashRadius: 20,
               icon: const Icon(Icons.close),
               onPressed: () {
-                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: ((context) => const HomeScreen())));
               },
             ),
           ),
@@ -55,7 +61,12 @@ class BookingSuccessful extends StatelessWidget {
                         fontSize: 20),
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => const BookingScreen())));
+                      },
                       child: const Text(
                         'Bookings',
                         style: TextStyle(
